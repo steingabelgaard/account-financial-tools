@@ -1,12 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * currency_rate_update
-# 
+#
 # Translators:
 # Antonio Trueba, 2016
 # danimaribeiro <danimaribeiro@gmail.com>, 2016
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012
 # Matjaž Mozetič <m.mozetic@matmoz.si>, 2015
+# Rudolf Schnapka <rs@techno-flex.de>, 2017
 # SaFi J. <safi2266@gmail.com>, 2015
 # Thomas A. Jaeger, 2015
 # Thomas A. Jaeger, 2015
@@ -14,14 +15,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: account-financial-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-24 00:47+0000\n"
-"PO-Revision-Date: 2016-10-04 09:43+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
-"Language-Team: German (http://www.transifex.com/oca/OCA-account-financial-tools-8-0/language/de/)\n"
+"POT-Creation-Date: 2017-02-03 23:26+0000\n"
+"PO-Revision-Date: 2017-02-24 22:42+0000\n"
+"Last-Translator: Rudolf Schnapka <rs@techno-flex.de>\n"
+"Language-Team: German (http://www.transifex.com/oca/OCA-account-financial-"
+"tools-8-0/language/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: currency_rate_update
@@ -161,7 +163,9 @@ msgid ""
 "If the time delta between the rate date given by the webservice and the "
 "current date exceeds this value, then the currency rate is not updated in "
 "OpenERP."
-msgstr "Ist die Differenz zwischen dem Währungsdatum im Webservice und dem aktuellen Datum grösser als hier abgegeben, wird die Währung im Odoo nicht angepasst."
+msgstr ""
+"Ist die Differenz zwischen dem Währungsdatum im Webservice und dem aktuellen "
+"Datum grösser als hier abgegeben, wird die Währung im Odoo nicht angepasst."
 
 #. module: currency_rate_update
 #: code:addons/currency_rate_update/model/currency_rate_update.py:152
@@ -208,7 +212,7 @@ msgstr "Monat(e)"
 #. module: currency_rate_update
 #: field:res.company,multi_company_currency_enable:0
 msgid "Multi company currency"
-msgstr ""
+msgstr "Währung im Mehrmandantenumfeld"
 
 #. module: currency_rate_update
 #: selection:currency.rate.update.service,service:0
@@ -254,9 +258,11 @@ msgstr "Woche(n)"
 #. module: currency_rate_update
 #: help:res.company,multi_company_currency_enable:0
 msgid ""
-"When this option is unchecked it will allow users to set a distinct currency"
-" updates on each company."
+"When this option is unchecked it will allow users to set a distinct currency "
+"updates on each company."
 msgstr ""
+"Ist diese Option nicht ausgewählt, erlaubt dies Nutzern individuelle "
+"Währungseinstellung je Unternehmen."
 
 #. module: currency_rate_update
 #: selection:currency.rate.update.service,service:0

@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * account_credit_control
-# 
+#
 # Translators:
 # Ahmet Altinisik <aaltinisik@altinkaya.com.tr>, 2016
 # Ahmet Altinisik <aaltinisik@altinkaya.com.tr>, 2016
@@ -14,8 +14,8 @@
 # Isabelle RICHARD <isabellerichard89@gmail.com>, 2015
 # Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2016
 # John Toro <johntoro@gmail.com>, 2015
-# Lixon Jean-Yves <ls.development.nc@gmail.com>, 2016
-# Lixon Jean-Yves <ls.development.nc@gmail.com>, 2016
+# Lixon Jean-Yves <jy.lixon@ls-development.net>, 2016
+# Lixon Jean-Yves <jy.lixon@ls-development.net>, 2016
 # Matjaž Mozetič <m.mozetic@matmoz.si>, 2015-2016
 # SaFi J. <safi2266@gmail.com>, 2015
 # Stefano <stefano.sforzi@agilebg.com>, 2016
@@ -23,32 +23,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: account-financial-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-24 00:47+0000\n"
-"PO-Revision-Date: 2016-10-04 09:43+0000\n"
+"POT-Creation-Date: 2017-08-25 22:30+0000\n"
+"PO-Revision-Date: 2017-08-25 22:32+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
-"Language-Team: Italian (http://www.transifex.com/oca/OCA-account-financial-tools-8-0/language/it/)\n"
+"Language-Team: Italian (http://www.transifex.com/oca/OCA-account-financial-"
+"tools-8-0/language/it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_text:account_credit_control.3_time_3
 msgid ""
 "\n"
-"        Our records indicate that we still have not received the payment of the above mentioned invoice despite our two reminders.\n"
-"        If payment have already been sent, please disregard this notice. If not, please proceed with payment.\n"
-"        If your payment has not been received in the next 5 days, your file will be transfered to our debt collection agency.\n"
+"        Our records indicate that we still have not received the payment of "
+"the above mentioned invoice despite our two reminders.\n"
+"        If payment have already been sent, please disregard this notice. If "
+"not, please proceed with payment.\n"
+"        If your payment has not been received in the next 5 days, your file "
+"will be transfered to our debt collection agency.\n"
 "\n"
-"        Should you need us to arrange a payment plan for you, please advise.\n"
+"        Should you need us to arrange a payment plan for you, please "
+"advise.\n"
 "        A customer account statement is enclosed for you convenience.\n"
 "\n"
-"        Thank you in advance for your anticipated cooperation in this matter.\n"
+"        Thank you in advance for your anticipated cooperation in this "
+"matter.\n"
 "\n"
 "        Best regards\n"
 "      "
-msgstr "\n         Dai nostri controlli contabili risulta che le seguenti fatture non sono state pagate nonostante il nostro precedente sollecito.\n        Vi pregiamo di procedere entro i prossimi 5 giorni.\n\n        Saluti.\n      "
+msgstr ""
+"\n"
+"         Dai nostri controlli contabili risulta che le seguenti fatture non "
+"sono state pagate nonostante il nostro precedente sollecito.\n"
+"        Vi pregiamo di procedere entro i prossimi 5 giorni.\n"
+"\n"
+"        Saluti.\n"
+"      "
 
 #. module: account_credit_control
 #: model:email.template,body_html:account_credit_control.email_template_credit_control_base
@@ -59,7 +72,13 @@ msgid ""
 "      <br/>\n"
 "      ${object.current_policy_level.custom_mail_text | safe}\n"
 "      "
-msgstr "\n      Gentile ${object.contact_address.name or ''}\n      <br/>\n      <br/>\n      ${object.current_policy_level.custom_mail_text | safe}\n      "
+msgstr ""
+"\n"
+"      Gentile ${object.contact_address.name or ''}\n"
+"      <br/>\n"
+"      <br/>\n"
+"      ${object.current_policy_level.custom_mail_text | safe}\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,name:account_credit_control.3_time_3
@@ -88,31 +107,47 @@ msgid "<p>Manual no follow</p>"
 msgstr "<p>Richiamo manuale</p>"
 
 #. module: account_credit_control
-#: model:credit.control.policy.level,custom_mail_text:account_credit_control.2_time_1
-msgid ""
-"<p>Our records indicate that we have not received the payment of the invoices mentioned in the attached document.<br>\n"
-"      If it has already been sent, please disregard this notice. If not, please proceed with payment within 10 days.<br><br>\n"
-"      Thank you in advance for your anticipated cooperation in this matter.<br><br>\n"
-"      Best regards\n"
-"      </p>"
-msgstr "<p>Da un controllo contabile risulta che le fatture indicate nel documento allegato risultano scoperte.<br>\n      Se avete provveduto al pagamento considerate nulla la presente altrimenti vi chiediamo di provvedere entro i prossimi 10 giorni.<br><br>\n    \n      Saluti\n      </p>"
-
-#. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.3_time_1
 msgid ""
-"<p>Our records indicate that we have not received the payment of the invoices mentioned in the attached document.<br><br>\n"
-"      If it has already been sent, please disregard this notice. If not, please proceed with payment within 10 days.<br><br>\n"
-"      Thank you in advance for your anticipated cooperation in this matter.<br><br>\n"
+"<p>Our records indicate that we have not received the payment of the "
+"invoices mentioned in the attached document.<br>\n"
+"      <br>\n"
+"      If it has already been sent, please disregard this notice. If not, "
+"please proceed with payment within 10 days.<br>\n"
+"      <br>\n"
+"      Thank you in advance for your anticipated cooperation in this matter."
+"<br>\n"
+"      <br>\n"
 "      Best regards\n"
 "      </p>"
-msgstr "<p>Da un controllo contabile risulta che le fatture indicate nel documento allegato risultano scoperte.<br>\n      Se avete provveduto al pagamento considerate nulla la presente altrimenti vi chiediamo di provvedere entro i prossimi 10 giorni.<br><br>\n    \n      Saluti\n      </p>"
+msgstr ""
+
+#. module: account_credit_control
+#: model:credit.control.policy.level,custom_mail_text:account_credit_control.2_time_1
+msgid ""
+"<p>Our records indicate that we have not received the payment of the "
+"invoices mentioned in the attached document.<br>\n"
+"      If it has already been sent, please disregard this notice. If not, "
+"please proceed with payment within 10 days.<br>\n"
+"      <br>\n"
+"      Thank you in advance for your anticipated cooperation in this matter."
+"<br>\n"
+"      <br>\n"
+"      Best regards\n"
+"      </p>"
+msgstr ""
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.3_time_2
 msgid ""
-"<p>Our records indicate that we have not yet received the payment of the invoices mentioned in the attached document despite our first reminder.<br>\n"
-"      If it has already been sent, please disregard this notice. If not, please proceed with payment within 5 days.<br><br>\n"
-"      Thank you in advance for your anticipated cooperation in this matter.<br><br>\n"
+"<p>Our records indicate that we have not yet received the payment of the "
+"invoices mentioned in the attached document despite our first reminder.<br>\n"
+"      If it has already been sent, please disregard this notice. If not, "
+"please proceed with payment within 5 days.<br>\n"
+"      <br>\n"
+"      Thank you in advance for your anticipated cooperation in this matter."
+"<br>\n"
+"      <br>\n"
 "      Best regards\n"
 "      </p>"
 msgstr ""
@@ -120,14 +155,23 @@ msgstr ""
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.2_time_2
 msgid ""
-"<p>Our records indicate that we still have not received the payment of the invoices mentioned in the attached document despite our reminder.\n"
-"      <br><br>\n"
-"      If payment have already been sent, please disregard this notice. If not, please proceed with payment.<br>\n"
-"      If your payment has not been received in the next 5 days, your file will be transfered to our debt<br>\n"
-"      collection agency.<br><br>\n"
-"      Should you need us to arrange a payment plan for you, please advise.<br>\n"
-"      A customer account statement is enclosed for you convenience.<br><br>\n"
-"      Thank you in advance for your anticipated cooperation in this matter.<br><br>\n"
+"<p>Our records indicate that we still have not received the payment of the "
+"invoices mentioned in the attached document despite our reminder.\n"
+"      <br>\n"
+"      <br>\n"
+"      If payment have already been sent, please disregard this notice. If "
+"not, please proceed with payment.<br>\n"
+"      If your payment has not been received in the next 5 days, your file "
+"will be transfered to our debt<br>\n"
+"      collection agency.<br>\n"
+"      <br>\n"
+"      Should you need us to arrange a payment plan for you, please advise."
+"<br>\n"
+"      A customer account statement is enclosed for you convenience.<br>\n"
+"      <br>\n"
+"      Thank you in advance for your anticipated cooperation in this matter."
+"<br>\n"
+"      <br>\n"
 "      Best regards\n"
 "      </p>"
 msgstr ""
@@ -135,12 +179,20 @@ msgstr ""
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.3_time_3
 msgid ""
-"<p>Our records indicate that we still have not received the payment of the invoices mentioned in the attached document despite our two reminders.<br>\n"
-"      If payment have already been sent, please disregard this notice. If not, please proceed with payment.<br> \n"
-"      If your payment has not been received in the next 5 days, your file will be transfered to our debt collection agency.<br><br>\n"
-"      Should you need us to arrange a payment plan for you, please advise.<br>\n"
-"      A customer account statement is enclosed for you convenience.<br><br>\n"
-"      Thank you in advance for your anticipated cooperation in this matter.<br><br>\n"
+"<p>Our records indicate that we still have not received the payment of the "
+"invoices mentioned in the attached document despite our two reminders.<br>\n"
+"      If payment have already been sent, please disregard this notice. If "
+"not, please proceed with payment.<br> \n"
+"      If your payment has not been received in the next 5 days, your file "
+"will be transfered to our debt collection agency.<br>\n"
+"      <br>\n"
+"      Should you need us to arrange a payment plan for you, please advise."
+"<br>\n"
+"      A customer account statement is enclosed for you convenience.<br>\n"
+"      <br>\n"
+"      Thank you in advance for your anticipated cooperation in this matter."
+"<br>\n"
+"      <br>\n"
 "      Best regards\n"
 "      </p>"
 msgstr ""
@@ -166,7 +218,9 @@ msgstr "Livello del controllo credito"
 #, python-format
 msgid ""
 "A credit control run is already running in background, please try later."
-msgstr "Un controllo di credito automatico e' gia' in funzione, prego provare piu' tardi."
+msgstr ""
+"Un controllo di credito automatico e' gia' in funzione, prego provare piu' "
+"tardi."
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/run.py:86
@@ -201,6 +255,16 @@ msgstr "Permette il cambio manuale del livello del controllo del credito"
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "An error has occured during the sending of the email."
 msgstr "Si e' verificato un errore durante l'invio della email"
+
+#. module: account_credit_control
+#: model:account.account,name:account_credit_control.a_recv_1
+msgid "B2B Debtors - (test)"
+msgstr ""
+
+#. module: account_credit_control
+#: model:account.account,name:account_credit_control.a_recv_2
+msgid "B2C Debtors - (test)"
+msgstr ""
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/policy.py:311
@@ -812,6 +876,11 @@ msgid "Name"
 msgstr "Nome"
 
 #. module: account_credit_control
+#: model:account.account,name:account_credit_control.a_recv_3
+msgid "New Debtors - (test)"
+msgstr ""
+
+#. module: account_credit_control
 #: field:credit.control.policy.changer,new_policy_id:0
 msgid "New Policy to Apply"
 msgstr ""
@@ -863,10 +932,13 @@ msgstr "Totale scoperto"
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_text:account_credit_control.2_time_1
 msgid ""
-"Our records indicate that we have not received the payment of the above mentioned invoice.\n"
-"        If it has already been sent, please disregard this notice. If not, please proceed with payment within 10 days.\n"
+"Our records indicate that we have not received the payment of the above "
+"mentioned invoice.\n"
+"        If it has already been sent, please disregard this notice. If not, "
+"please proceed with payment within 10 days.\n"
 "\n"
-"        Thank you in advance for your anticipated cooperation in this matter.\n"
+"        Thank you in advance for your anticipated cooperation in this "
+"matter.\n"
 "\n"
 "        Best regards\n"
 "      "
@@ -875,8 +947,10 @@ msgstr ""
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_text:account_credit_control.3_time_1
 msgid ""
-"Our records indicate that we have not received the payment of the above mentioned invoice.\n"
-"If it has already been sent, please disregard this notice. If not, please proceed with payment within 10 days.\n"
+"Our records indicate that we have not received the payment of the above "
+"mentioned invoice.\n"
+"If it has already been sent, please disregard this notice. If not, please "
+"proceed with payment within 10 days.\n"
 "\n"
 "Thank you in advance for your anticipated cooperation in this matter.\n"
 "\n"
@@ -887,8 +961,10 @@ msgstr ""
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_text:account_credit_control.3_time_2
 msgid ""
-"Our records indicate that we have not yet received the payment of the above mentioned invoice despite our first reminder.\n"
-"        If it has already been sent, please disregard this notice. If not, please proceed with payment within 5 days.\n"
+"Our records indicate that we have not yet received the payment of the above "
+"mentioned invoice despite our first reminder.\n"
+"        If it has already been sent, please disregard this notice. If not, "
+"please proceed with payment within 5 days.\n"
 "\n"
 "Thank you in advance for your anticipated cooperation in this matter.\n"
 "\n"
@@ -899,16 +975,21 @@ msgstr ""
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_text:account_credit_control.2_time_2
 msgid ""
-"Our records indicate that we still have not received the payment of the above mentioned invoice despite our reminder.\n"
+"Our records indicate that we still have not received the payment of the "
+"above mentioned invoice despite our reminder.\n"
 "\n"
-"        If payment have already been sent, please disregard this notice. If not, please proceed with payment.\n"
-"        If your payment has not been received in the next 5 days, your file will be transfered to our debt\n"
+"        If payment have already been sent, please disregard this notice. If "
+"not, please proceed with payment.\n"
+"        If your payment has not been received in the next 5 days, your file "
+"will be transfered to our debt\n"
 "        collection agency.\n"
 "\n"
-"        Should you need us to arrange a payment plan for you, please advise.\n"
+"        Should you need us to arrange a payment plan for you, please "
+"advise.\n"
 "        A customer account statement is enclosed for you convenience.\n"
 "\n"
-"        Thank you in advance for your anticipated cooperation in this matter.\n"
+"        Thank you in advance for your anticipated cooperation in this "
+"matter.\n"
 "\n"
 "        Best regards\n"
 "      "
@@ -917,7 +998,7 @@ msgstr ""
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_mail_mail
 msgid "Outgoing Mails"
-msgstr ""
+msgstr "Mail in Uscita"
 
 #. module: account_credit_control
 #: field:credit.control.line,policy_level_id:0
@@ -1200,7 +1281,10 @@ msgid ""
 "You cannot cancel this invoice.\n"
 "A payment reminder has already been sent to the customer.\n"
 "You must create a credit note and issue a new invoice."
-msgstr "Questa fattura non puo' essere cancellata.\nUn richiamo di pagaemento e' stato gia' inviato al cliente.\nDeve essere emessa una nota di credito o un nuova fattura."
+msgstr ""
+"Questa fattura non puo' essere cancellata.\n"
+"Un richiamo di pagaemento e' stato gia' inviato al cliente.\n"
+"Deve essere emessa una nota di credito o un nuova fattura."
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_credit_control_communication

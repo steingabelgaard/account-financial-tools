@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: account-financial-tools (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-14 00:45+0000\n"
-"PO-Revision-Date: 2016-09-15 12:46+0000\n"
+"POT-Creation-Date: 2017-02-26 22:34+0000\n"
+"PO-Revision-Date: 2017-05-11 14:14+0000\n"
 "Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
 "Language-Team: Finnish (http://www.transifex.com/oca/OCA-account-financial-tools-8-0/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -33,12 +33,12 @@ msgstr ""
 #. module: account_move_template
 #: field:wizard.select.move.template.line,amount:0
 msgid "Amount"
-msgstr ""
+msgstr "Määrä"
 
 #. module: account_move_template
 #: field:account.move.template.line,analytic_account_id:0
 msgid "Analytic Account"
-msgstr ""
+msgstr "Analyyttinen tili"
 
 #. module: account_move_template
 #: code:addons/account_move_template/wizard/select_template.py:96
@@ -49,7 +49,7 @@ msgstr ""
 #. module: account_move_template
 #: view:wizard.select.move.template:account_move_template.wizard_select_template
 msgid "Cancel"
-msgstr ""
+msgstr "Peruuta"
 
 #. module: account_move_template
 #: code:addons/account_move_template/account_document_template.py:75
@@ -109,7 +109,7 @@ msgstr ""
 #: selection:account.move.template.line,move_line_type:0
 #: selection:wizard.select.move.template.line,move_line_type:0
 msgid "Debit"
-msgstr ""
+msgstr "Debet"
 
 #. module: account_move_template
 #: field:account.document.template,display_name:0
@@ -139,7 +139,7 @@ msgstr ""
 #. module: account_move_template
 #: field:account.move.template.line,journal_id:0
 msgid "Journal"
-msgstr ""
+msgstr "Piväkirja"
 
 #. module: account_move_template
 #: view:account.move.template:account_move_template.view_move_template_form
@@ -230,7 +230,7 @@ msgstr ""
 #: field:account.move.template,name:0 field:account.move.template.line,name:0
 #: field:wizard.select.move.template.line,name:0
 msgid "Name"
-msgstr ""
+msgstr "Nimi"
 
 #. module: account_move_template
 #: view:wizard.select.move.template:account_move_template.wizard_select_template
@@ -251,7 +251,7 @@ msgstr ""
 #. module: account_move_template
 #: field:wizard.select.move.template,partner_id:0
 msgid "Partner"
-msgstr ""
+msgstr "Kumppani"
 
 #. module: account_move_template
 #: field:account.document.template.line,python_code:0
@@ -269,7 +269,7 @@ msgstr ""
 #: field:account.document.template.line,sequence:0
 #: field:account.move.template.line,sequence:0
 msgid "Sequence"
-msgstr ""
+msgstr "Sekvenssi"
 
 #. module: account_move_template
 #: field:wizard.select.move.template,state:0
@@ -312,7 +312,7 @@ msgstr ""
 #: field:account.document.template.line,type:0
 #: field:account.move.template.line,type:0
 msgid "Type"
-msgstr ""
+msgstr "Tyyppi"
 
 #. module: account_move_template
 #: code:addons/account_move_template/wizard/select_template.py:104
