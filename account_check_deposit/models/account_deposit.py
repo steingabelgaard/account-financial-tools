@@ -155,12 +155,16 @@ class AccountCheckDeposit(models.Model):
 
     @api.model
     def _prepare_account_move_vals(self, deposit):
-        date = deposit.deposit_date
+        if (
+                deposit.company_id.check_deposit_offsetting_account ==
+                'bank_account'):
+            journal_id = deposit.bank_journal_id.id
+        else:
+            journal_id = deposit.journal_id.id
         move_vals = {
-            'journal_id': deposit.journal_id.id,
-            'date': date,
-            'name': _('Check Deposit %s') % deposit.name,
-            'ref': deposit.name,
+            'journal_id': journal_id,
+            'date': deposit.deposit_date,
+            'ref': _('Check Deposit %s') % deposit.name,
         }
         return move_vals
 
@@ -231,6 +235,8 @@ class AccountCheckDeposit(models.Model):
                 deposit, total_debit, total_amount_currency)
             counter_vals['move_id'] = move.id
             move_line_obj.create(counter_vals)
+            if deposit.company_id.check_deposit_post_move:
+                move.post()
 
             deposit.write({'state': 'done', 'move_id': move.id})
             for reconcile_lines in to_reconcile_lines:
@@ -256,6 +262,11 @@ class AccountCheckDeposit(models.Model):
                 self.currency_id = self.journal_id.currency_id
             else:
                 self.currency_id = self.journal_id.company_id.currency_id
+
+    def get_report(self):
+        action = self.env['report'].get_action(
+            self, 'account_check_deposit.report_checkdeposit')
+        return action
 
 
 class AccountMoveLine(models.Model):

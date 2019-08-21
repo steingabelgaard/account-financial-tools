@@ -1,24 +1,7 @@
 # -*- coding: utf-8 -*-
-##############################################################################
-#
-#    Author: Nicolas Bessi
-#    Copyright 2014 Camptocamp SA
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-##############################################################################
-from openerp.tests import common
+# Copyright 2014-2017 Camptocamp SA
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+from odoo.tests import common
 
 
 class FixedFeesTester(common.TransactionCase):
@@ -33,7 +16,10 @@ class FixedFeesTester(common.TransactionCase):
         self.assertTrue(self.usd)
 
         self.company = self.browse_ref('base.main_company')
-        self.company.currency_id = self.euro
+        self.env.cr.execute(
+            """UPDATE res_company SET currency_id = %s
+            WHERE id = %s""", (self.company.id, self.euro.id),
+        )
 
         level_obj = self.env['credit.control.policy.level']
         self.euro_level = level_obj.new({

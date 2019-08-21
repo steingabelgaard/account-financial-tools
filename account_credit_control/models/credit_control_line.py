@@ -125,6 +125,8 @@ class CreditControlLine(models.Model):
     run_id = fields.Many2one(comodel_name='credit.control.run',
                              string='Source')
 
+    manual_followup = fields.Boolean(string='Manual Followup')
+
     @api.model
     def _prepare_from_move_line(self, move_line, level, controlling_date,
                                 open_amount):
@@ -179,7 +181,8 @@ class CreditControlLine(models.Model):
 
         new_lines = self.browse()
         for move_line in lines:
-            if move_line.currency_id:
+            ml_currency = move_line.currency_id
+            if ml_currency and ml_currency != user_currency:
                 open_amount = move_line.amount_residual_currency
             else:
                 open_amount = move_line.amount_residual
@@ -216,3 +219,18 @@ class CreditControlLine(models.Model):
                 )
 
         return super(CreditControlLine, self).unlink()
+
+    @api.multi
+    def write(self, values):
+        res = super(CreditControlLine, self).write(values)
+        if 'manual_followup' in values:
+            self.partner_id.write({
+                'manual_followup': values.get('manual_followup'),
+            })
+        return res
+
+    @api.model
+    def create(self, values):
+        line = super(CreditControlLine, self).create(values)
+        line.manual_followup = line.partner_id.manual_followup
+        return line

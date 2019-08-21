@@ -2,10 +2,12 @@
 # Copyright 2016 - Tecnativa - Angel Moya <odoo@tecnativa.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import at_install, post_install, TransactionCase
 from odoo import exceptions
 
 
+@at_install(False)
+@post_install(True)
 class TestAccountInvoiceTaxRequired(TransactionCase):
 
     def setUp(self):
@@ -66,8 +68,6 @@ class TestAccountInvoiceTaxRequired(TransactionCase):
     def test_exception(self):
         """Validate invoice without tax must raise exception
         """
-        self.invoice.action_date_assign()
-        self.invoice.action_move_create()
         with self.assertRaises(exceptions.Warning):
             self.invoice.with_context(
-                test_tax_required=True).invoice_validate()
+                test_tax_required=True).action_invoice_open()
